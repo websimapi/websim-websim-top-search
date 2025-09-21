@@ -1,7 +1,7 @@
 /* ...existing code... */
-// Simple fetch UI for: https://api.websim.com/api/v1/search/top?limit=36&offset=36
+// Simple fetch UI for: https://api.websim.com/api/v1/feed/trending?limit=24&offset=0&feed=hot_desktop&range=all
 
-const API_URL = 'https://api.websim.com/api/v1/search/top?limit=36&offset=36';
+const API_URL = 'https://api.websim.com/api/v1/feed/trending?limit=24&offset=0&feed=hot_desktop&range=all';
 
 const fetchBtn = document.getElementById('fetchBtn');
 const statusEl = document.getElementById('status');
@@ -88,4 +88,3 @@ fetchBtn.addEventListener('click', fetchAndShow);
 // auto-fetch on load
 fetchAndShow();
 /* ...existing code... */
-

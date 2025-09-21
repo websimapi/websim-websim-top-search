@@ -1,0 +1,71 @@
+/* ...existing styles... */
+:root{
+  --bg: #ffffff;
+  --fg: #111;
+  --muted: #666;
+  --accent: #0b63d6;
+  --card-bg: #f7f7f8;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--fg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:32px;
+}
+.container{
+  max-width:980px;
+  margin:0 auto;
+}
+h1{
+  margin:0 0 16px 0;
+  font-weight:600;
+}
+.controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin-bottom:18px;
+}
+button{
+  padding:8px 12px;
+  border:1px solid #ddd;
+  background:white;
+  color:var(--fg);
+  border-radius:6px;
+  cursor:pointer;
+}
+button:active{transform:translateY(1px)}
+.status{color:var(--muted)}
+.results{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:12px;
+  margin-bottom:18px;
+}
+.card{
+  background:var(--card-bg);
+  border-radius:8px;
+  padding:12px;
+  border:1px solid #e6e6e6;
+  min-height:80px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.card .title{
+  font-weight:600;
+  font-size:14px;
+  color:var(--fg);
+}
+.card .meta{
+  color:var(--muted);
+  font-size:13px;
+}
+.raw{margin-top:6px}
+pre{white-space:pre-wrap;word-break:break-word;background:#fafafa;padding:12px;border-radius:8px;border:1px solid #eee}
+

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WebSim Top Search (limit=36 offset=36)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "lit-html/": "https://unpkg.com/lit-html@2.7.5/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main class="container">
+    <h1>WebSim Top Search (limit=36 offset=36)</h1>
+
+    <div class="controls">
+      <button id="fetchBtn">Fetch Results</button>
+      <span id="status" class="status">Idle</span>
+    </div>
+
+    <section id="results" class="results" aria-live="polite">
+      <!-- results injected here -->
+    </section>
+
+    <details class="raw">
+      <summary>Raw JSON</summary>
+      <pre id="rawJson">{}</pre>
+    </details>
+  </main>
+
+  <script type="module" src="main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
